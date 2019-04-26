@@ -1,0 +1,29 @@
+body {
+	background-color: orange;
+}
+
+.box-share .calendar {
+	display: block;
+	padding: 0 6px 0 28px;
+	color: #002a67;
+	font-size: 13px;
+	font-weight: 400;
+	font-family: 'Oswald', 'arial narrow', sans-serif;
+	text-decoration: none;
+	border: 1px solid #b7b7b7;
+	border-radius: 2px;
+}
+
+.box-share .calendar {
+	position: relative;
+	background: #eee url(chrome-extension://__MSG_@@extension_id__/images/calendar.png) no-repeat 4px 50%;
+	background: url(chrome-extension://__MSG_@@extension_id__/images/calendar.png) no-repeat 4px 50%, linear-gradient(to bottom, #fefefe 0%, #f4f4f4 29%, #dcdcdc 76%, #d3d3d3 100%);
+}
+
+.box-share .calendar:hover,
+.box-share .calendar:active,
+.box-share .calendar:focus {
+	position: relative;
+	background: #fff url(chrome-extension://__MSG_@@extension_id__/images/calendar.png) no-repeat 4px 50%;
+	background: url(chrome-extension://__MSG_@@extension_id__/images/calendar.png) no-repeat 4px 50%, linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
+}

@@ -8,6 +8,38 @@
 		"scripts": ["background.js"],
 		"persistent": false
 	},
+	"content_scripts": [
+		{
+			"matches": ["*://blekinge.svenskfotboll.se/match/*scr=result*",
+			            "*://bohuslan.svenskfotboll.se/tavling/match/*scr=result*",
+			            "*://dalafotboll.nu/match/*scr=result*",
+			            "*://dalsland.svenskfotboll.se/match/*scr=result*",
+			            "*://gestrikland.svenskfotboll.se/match/*scr=result*",
+			            "*://gotland.svenskfotboll.se/match/*scr=result*",
+			            "*://gbgfotboll.se/match/*scr=result*",
+			            "*://halland.svenskfotboll.se/match/*scr=result*",
+			            "*://halsingland.svenskfotboll.se/match/*scr=result*",
+			            "*://www.jhff.se/match/*scr=result*",
+			            "*://medelpad.svenskfotboll.se/match/*scr=result*",
+			            "*://norrbotten.svenskfotboll.se/match/*scr=result*",
+			            "*://www.skaneboll.se/match/*scr=result*",
+			            "*://www.smalandsfotbollen.se/match/*scr=result*",
+			            "*://www.stff.se/match/*scr=result*",
+			            "*://sodermanland.svenskfotboll.se/match/*scr=result*",
+			            "*://uppland.svenskfotboll.se/match/*scr=result*",
+			            "*://www.varmlandsff.se/match/*scr=result*",
+			            "*://vasterbotten.svenskfotboll.se/match/*scr=result*",
+			            "*://www.vastgotafotboll.org/match/*scr=result*",
+			            "*://vff.se/match/*scr=result*",
+			            "*://angermanland.svenskfotboll.se/match/*scr=result*",
+			            "*://www.olff.se/match/*scr=result*",
+			            "*://ostergotland.svenskfotboll.se/match/*scr=result*",
+			            "*://www2.svenskfotboll.se/cuper-och-serier/information/*scr=result*"
+			        ],
+			"css": ["style.css"],
+			"js":  ["main.js"]
+		}
+	],
 	"page_action": {
 		"default_popup": "popup.html",
 		"default_icon": {
@@ -23,5 +55,8 @@
 		"48": "icons/icon-48.png",
 		"128": "icons/icon-128.png"
 	},
+	"web_accessible_resources": [
+		"images/*.png"
+	],
 	"manifest_version": 2
 }
