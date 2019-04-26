@@ -2,6 +2,7 @@
 	"name": "Fogis Calendar Importer",
 	"version": "0.1",
 	"description": "Import events from Fogis to your calendar",
+	"default_locale": "sv",
 	"permissions": ["activeTab","declarativeContent","storage"],
 	"options_page": "options.html",
 	"background": {
