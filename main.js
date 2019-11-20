@@ -25,7 +25,8 @@ function getGameInfo() {
 function generateIcal(homeTeam,awayTeam,date,kickOff,stadium,competition) {
 	var start = new Date(date+" "+kickOff);
 	var end   = new Date(date+" "+kickOff);
-	end.setHours(end.getHours()+2);
+	var gameLength = competition.toUpperCase().includes("FUTSAL") ? 1 : 2;
+	end.setHours(end.getHours()+gameLength);
 	var msg = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//github.com/krokerik//ical//EN\nBEGIN:VEVENT\nSEQUENCE:0\nDTSTAMP:"+to8601(new Date())+"\nDTSTART:"+to8601(start)+"\nDTEND:"+to8601(end)+"\nSUMMARY:"+homeTeam+" - "+awayTeam+"\nLOCATION:"+stadium+"\nDESCRIPTION:"+competition+"\nURL;VALUE=URI:"+window.location.origin+window.location.pathname+window.location.search+"\nEND:VEVENT\nEND:VCALENDAR";
 	window.open("data:text/calendar;charset=utf8," + escape(msg));
 }
