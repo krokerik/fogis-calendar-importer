@@ -2,5 +2,13 @@
 	"calendar_link": {
 		"message": "Lägg till i kalender",
 		"description": "Link to add game to calendar"
+	},
+	"ics_option": {
+		"message": "Ladda ner ICS-fil",
+		"description": "Option to get game information in an ICS-file"
+	},
+	"google_option": {
+		"message": "Lägg till i Google Kalender",
+		"description": "Option to open game information in a Google Calendar tab"
 	}
 }
