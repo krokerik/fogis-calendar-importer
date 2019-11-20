@@ -4,7 +4,7 @@
 	<style>
 		button {
 			height: 30px;
-			width: 30px;
+			width: 100px;
 			outline: none;
 		}
 	</style>
@@ -12,6 +12,10 @@
 <body>
 	<button id="changeColor"></button>
 	<a href="options.html" target="_blank">options</a>
+	<form name="options">
+	<input type="radio" name="calType" value="ics">Download ICS-file</input> <br/>
+	<input type="radio" name="calType" value="google">Add to Google Calendar</input>
+	</form>
 	<script type="text/javascript" src="popup.js"></script>
 </body>
 </html>
